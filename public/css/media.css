@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .gfg-div {
+    background-color: #63c971;
+    color: #fff;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    color: black;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .form1 {
+    padding: 0px 10px !important;
+    position: relative;
+  }
+  .enrolled-btn {
+    display: block;
+    width: 100px !important;
+    position: absolute;
+    bottom: 0px !important;
+  }
+  .container-fluid {
+    padding: 0px 10px;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .form1 {
+    padding: 10px !important;
+    position: relative;
+  }
+  .enrolled-btn {
+    display: block;
+    width: 580px !important;
+    position: absolute;
+    margin-top: 30px !important;
+    bottom: 0px !important;
+    background-color: green !important;
+    right: 25px !important;
+  }
+  .container-fluid {
+    padding: 0px 10px;
+  }
+  .show-lg{
+    display: none;
+}
+
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .gfg-div {
+    width: 400px;
+    height: 200px;
+    background-color: chartreuse;
+    color: black;
+  }
+  .show-lg{
+    display: none;
+}
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .form1 {
+    padding: 10px !important;
+    position: relative;
+  }
+  .enrolled-btn {
+    display: block;
+    width: 308px !important;
+    position: absolute;
+    
+    bottom: 0px !important;
+    right: 25px !important;
+  }
+  .container-fluid {
+    padding: 0px 10px;
+
+  }
+  .user {
+    padding: 5px 10px !important;
+  }
+
+  .register_hide .p-5 {
+    padding: 35px 5px !important;
+  }
+  .login_hide .p-5 {
+    padding: 35px 5px !important;
+  }
+  .show-lg{
+      display: none !important;
+  }
+
+  .border-left {
+    border-left: 2px solid #fff !important;
+   
+  }
+  .loading {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 2;
+    display: none;
+  }
+
+  .card-custom {
+    margin: 30px 10px;
+    width: 90vw;
+  }
+
+  
+  .chat_img img{ max-width:50%;}
+  .chat_img_bb {
+    max-width: 50%;
+  }
+
+.chat_ib h5{ font-size:15px !important; color:#252525 !important; margin:0 0 8px 0 !important;}
+.chat_ib h1{ font-size:30px !important; margin:0 0 8px 0 !important;}
+.chat_ib h4{ font-size:20px !important; margin:0 0 8px 0 !important;}
+.chat_ib h5 span{ font-size:13px !important; float:right !important;}
+.chat_ib p{ font-size:14px !important; color:#202020 !important; margin:auto!important; }
+.chat_img {
+  float: left !important;
+  width: 100% !important;
+}
+.chat_img_bb {
+  transform: translate(20px,10px) !important;
+  float: left !important;
+  width: 100% !important;
+}
+.chat_ib {
+  float: left !important;
+  padding: 0 0 0 15px !important;
+  width: 100% !important;
+}
+.chat_date{
+  margin-top: 5px;
+  width: 100%;
+}
+.chat_people{ overflow:hidden; clear:both;}
+.chat_list {
+ 
+  margin: 0 !important;
+  padding: 18px 16px 10px !important;
+}
+.msetup {
+  padding: 0px !important;
+}
+.setup-next{
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  width: 250px;
+  
+  
+}
+.cmsetup{
+  padding: 30px !important;
+  
+}
+.mform{
+  margin-bottom: 30px;
+}
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    color: black;
+  }
+  .show-lg{
+    display: none;
+}
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  .enrolled-btn {
+    display: block;
+    width: 155px !important;
+  }
+  .show-lg{
+    display: none;
+}
+}

@@ -1,0 +1,471 @@
+body {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.sidebar {
+  background-color: #19415a;
+}
+.dropdown-header {
+  background-color: #1c6461 !important;
+  border: 1px solid #1c6461 !important;
+}
+.border-left {
+  border-left: 2px solid rgb(211, 211, 211) !important;
+ 
+} 
+.cc-text{
+  margin-top: 50px;
+}
+
+.data-status {
+ background: rgb(255, 215, 169) !important;
+
+}
+
+/* .form-status {
+border-left: 10px solid orange;
+} */
+.custom-text-color-1 {
+  color: #1c6461;
+}
+.bg-register-image1 {
+  background-image: url("../../public/img/undraw_baby1.svg");
+  background-position: center;
+  background-size: cover;
+}
+.bg-register-image2 {
+  background-image: url("../../public/img/undraw_play_time1.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-register-image3 {
+  background-image: url("../../public/img/undraw_select.svg");
+  background-position: center;
+  background-size: cover;
+}
+.bg-admin-image{
+  background-image: url("../../public/img/undraw_setup_wizard.svg");
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.bg-home-image {
+  background-image: url("../../public/img/undraw_home.svg");
+  background-position: center;
+  object-fit: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bgc {
+  margin: 20px;
+}
+.link-custom {
+  color: white;
+}
+
+.home {
+  min-height: 90vh;
+}
+.home_time{
+  font-size: 10px !important;
+}
+.notif-design{
+  border-top: 1px solid #26648B;
+}
+.card-custom {
+  background: transparent;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  min-height: 70vh;
+}
+.link-custom:hover {
+  text-decoration: none;
+  color: white;
+}
+.form-control-custom {
+  font-size: 1rem;
+  padding: 1.3rem 1rem;
+}
+.form-control-custom-1 {
+  font-size: 0.8rem;
+}
+
+.btn-custom {
+  font-size: 0.8rem;
+  padding: 0.75rem 1rem;
+  background-color: #26648B !important;
+  color: #fff;
+}
+.btn-custom-2 {
+  font-size: 0.8rem;
+  padding: 0.75rem 1rem;
+  background-color: #238C3E !important;
+  color: #fff;
+}
+.btn-custom-0 {
+  font-size: 0.8rem;
+  padding: 0.75rem 1rem;
+
+  color: #fff;
+}
+.btn-custom-1 {
+  font-size: 0.8rem;
+  background-color: #4F8FBF !important;
+  color: #fff;
+}
+
+.btn-custom:hover,
+.btn-custom-1:hover,
+.btn-custom-2:hover {
+  color: #fff;
+}
+
+.card[class*=border] {
+  border: 1px solid transparent;
+}
+.custom-link-item:hover {
+  border-bottom: 1px solid rgb(97, 97, 243);
+  cursor: pointer;
+}
+
+.border-custom-1 {
+  width: 100%;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+small {
+  color: rgb(61, 61, 61) !important;
+}
+.setup fieldset:not(:first-of-type) {
+  display: none;
+}
+.setup fieldset {
+  position: relative;
+}
+.setup-next{
+  position: absolute;
+  bottom: 50px;
+  right: 95px;
+  width: 340px;
+}
+#interviewForm fieldset:not(:first-of-type) {
+  display: none;
+}
+.post-body{
+  border-top: 1px solid rgb(174, 174, 174);
+}
+#interviewForm fieldset {
+  position: relative;
+}
+
+#interviewForm #top-btn {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+
+.form_one,
+.form_two,
+.form_three,
+.form_four
+.manual_register_form{
+  position: relative;
+}
+
+.manual_register_form .btn-submit-bottom {
+  position: absolute;
+  right: 0px;
+}
+.form_one .btn-submit-bottom {
+  position: absolute;
+  right: 0px;
+}
+.form_two .btn-submit-bottom {
+  position: absolute;
+  right: 0px;
+}
+.form_three .btn-submit-bottom {
+  position: absolute;
+  right: 0px;
+ 
+}
+.form_four .btn-submit-bottom {
+  position: absolute;
+  right: 0px;
+}
+
+#patient_enroll button[type="submit"] {
+  width: 130px;
+  position: absolute;
+  bottom: 12px;
+  right: 70px;
+}
+.bg-custom {
+  background-color: #26648B !important;
+}
+td {
+  font-size: 1rem !important;
+}
+
+.ajs-message.ajs-custom {
+  color: #f9fdff;
+  background-color: #31708f;
+  border-color: #31708f;
+}
+
+.alertify .ajs-header {
+  border-bottom: 0px; 
+}
+
+.alertify button.ajs-button.ajs-ok {
+  font-size: 0.8rem;
+  padding: 0.75rem 1rem;
+  background-color: #238C3E !important;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.alertify button.ajs-button.ajs-cancel {
+  font-size: 0.8rem;
+  padding: 0.75rem 1rem;
+  background-color: #26648B !important;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.alertify .ajs-body {
+  padding-bottom: 20px;
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    z-index: 2;
+    display: none;
+}
+.form1 {
+  position: relative;
+}
+
+.pwd-custom span.field-icon {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  right: 0.5rem;
+  top: 0.7rem;
+  z-index: 2;
+}
+.topbar #sidebarToggleTop:hover {
+   background-color: transparent !important; 
+}
+.enrolled-btn {
+  display: block;
+  width: 150px !important;
+  position: absolute;
+  bottom: 0px !important;
+  right: 60px !important;
+}
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+  animation: rotator 1.4s linear infinite;
+}
+.navbar .dropdown-menu a {
+  padding: 0px 10px;
+ 
+}
+.bg-danger-custom {
+  border-left: 5px solid #E57373 !important;
+ 
+}
+.bg-success-custom {
+  border-left: 5px solid #66B66A !important;
+}
+.bg-today-custom{
+  border-left: 5px solid #e0b939 !important;
+}
+
+.bg-custom-home-warning{
+  border-top: 10px solid #e0b939 !important;
+}
+
+.bg-custom-home-danger {
+  border-top: 10px solid #E57373 !important;
+}
+
+.bg-custom-home-success{
+  border-top: 10px solid #66B66A !important;
+}
+.strength-meter-message {
+  font-size: 13px !important;
+}
+/* .form-control {
+  border: none !important;
+  border-bottom: 1px solid rgb(170, 170, 170) !important;
+  border-radius: 0px !important;
+}
+input:focus, input.form-control:focus {
+
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+} */
+
+#interviewForm  select {
+  background-color: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid #ced4da !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out !important;
+}
+.individualmodal select {
+  background-color: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid #ced4da !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out !important;
+}
+
+.form_patient_enroll select {
+  background-color: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid #ced4da !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out !important;
+}
+#interviewForm select:focus {
+  border-bottom: 1px solid #ced4da !important;
+}
+
+select, option, input[type='date'] {
+  font-size: 15px !important;
+}
+@-webkit-keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite,
+    colors 5.6s ease-in-out infinite;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+  0% {
+    stroke: #4285f4;
+  }
+  25% {
+    stroke: #de3e35;
+  }
+  50% {
+    stroke: #f7c223;
+  }
+  75% {
+    stroke: #1b9a59;
+  }
+  100% {
+    stroke: #4285f4;
+  }
+}
+
+@keyframes colors {
+  0% {
+    stroke: #4285f4;
+  }
+  25% {
+    stroke: #de3e35;
+  }
+  50% {
+    stroke: #f7c223;
+  }
+  75% {
+    stroke: #1b9a59;
+  }
+  100% {
+    stroke: #4285f4;
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+
+
+.chat_img img{ max-width:50%;}
+.chat_img_bb img{ max-width:50%;}
+
+.chat_ib h5{ font-size:15px !important; color:#252525 !important; margin:0 0 8px 0 !important;}
+.chat_ib h5 span{ font-size:13px !important; float:right !important;}
+.chat_ib p{ font-size:14px !important; color:#202020 !important; margin:auto!important; }
+.chat_img {
+  float: left !important;
+  width: 15% !important;
+}
+.chat_img_bb {
+  float: left !important;
+  transform: translate(20px,40px);
+  width: 15% !important;
+}
+.chat_ib {
+  float: left !important;
+  padding: 0 0 0 15px !important;
+  width: 85% !important;
+}
+
+.chat_people{ overflow:hidden; clear:both;}
+.chat_list {
+ 
+  margin: 0 !important;
+  padding: 18px 16px 10px !important;
+}
+
+.ch-extra {
+  transform: translate(0px, 20px) !important;
+}
