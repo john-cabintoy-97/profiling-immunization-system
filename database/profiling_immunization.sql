@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2022 at 04:43 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- Generation Time: May 29, 2025 at 05:10 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -57,11 +57,8 @@ CREATE TABLE `individual_treatment` (
   `performedlabtest` varchar(50) NOT NULL,
   `patient_id` int(11) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `individual_treatment`
---
 -- --------------------------------------------------------
 
 --
@@ -99,12 +96,9 @@ CREATE TABLE `patient_enrollement` (
   `schedule_status` varchar(50) NOT NULL,
   `users_id` int(11) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `patient_enrollement`
---
-----------------------------------------------------
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `record_four`
@@ -127,11 +121,7 @@ CREATE TABLE `record_four` (
   `status` varchar(50) NOT NULL DEFAULT 'pending',
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `patient_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `record_four`
---
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -153,11 +143,7 @@ CREATE TABLE `record_one` (
   `delivery` varchar(50) NOT NULL,
   `se_status` varchar(50) NOT NULL,
   `patient_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `record_one`
---
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -187,11 +173,7 @@ CREATE TABLE `record_three` (
   `nutrition_weight_month` varchar(50) NOT NULL,
   `nutrition_status_month` varchar(50) NOT NULL,
   `patient_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `record_three`
---
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -220,12 +202,9 @@ CREATE TABLE `record_two` (
   `immunization_second_dose` date NOT NULL,
   `immunization_third_dose` date NOT NULL,
   `patient_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `record_two`
---
----------------------------------------------------
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `schedule`
@@ -240,11 +219,7 @@ CREATE TABLE `schedule` (
   `patient_id` int(11) NOT NULL,
   `users_id` int(11) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `schedule`
---
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -261,7 +236,7 @@ CREATE TABLE `sms_logs` (
   `schedule_date` date NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `users_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -278,179 +253,7 @@ CREATE TABLE `users` (
   `usertype` varchar(50) NOT NULL,
   `status` varchar(50) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
--- Indexes for dumped tables
---
-
---
--- Indexes for table `individual_treatment`
---
-ALTER TABLE `individual_treatment`
-  ADD PRIMARY KEY (`individual_treatment_id`),
-  ADD KEY `patient_id` (`patient_id`);
-
---
--- Indexes for table `patient_enrollement`
---
-ALTER TABLE `patient_enrollement`
-  ADD PRIMARY KEY (`patient_id`),
-  ADD KEY `users_id` (`users_id`);
-
---
--- Indexes for table `record_four`
---
-ALTER TABLE `record_four`
-  ADD PRIMARY KEY (`record_four_id`),
-  ADD KEY `patient_id` (`patient_id`);
-
---
--- Indexes for table `record_one`
---
-ALTER TABLE `record_one`
-  ADD PRIMARY KEY (`record_one_id`),
-  ADD KEY `patient_id` (`patient_id`);
-
---
--- Indexes for table `record_three`
---
-ALTER TABLE `record_three`
-  ADD PRIMARY KEY (`record_three_id`);
-
---
--- Indexes for table `record_two`
---
-ALTER TABLE `record_two`
-  ADD PRIMARY KEY (`record_two_id`),
-  ADD KEY `patient_id` (`patient_id`);
-
---
--- Indexes for table `schedule`
---
-ALTER TABLE `schedule`
-  ADD PRIMARY KEY (`schedule_id`),
-  ADD KEY `patient_id` (`patient_id`);
-
---
--- Indexes for table `sms_logs`
---
-ALTER TABLE `sms_logs`
-  ADD PRIMARY KEY (`sms_log_id`),
-  ADD KEY `users_id` (`users_id`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`users_id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `individual_treatment`
---
-ALTER TABLE `individual_treatment`
-  MODIFY `individual_treatment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT for table `patient_enrollement`
---
-ALTER TABLE `patient_enrollement`
-  MODIFY `patient_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `record_four`
---
-ALTER TABLE `record_four`
-  MODIFY `record_four_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `record_one`
---
-ALTER TABLE `record_one`
-  MODIFY `record_one_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `record_three`
---
-ALTER TABLE `record_three`
-  MODIFY `record_three_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `record_two`
---
-ALTER TABLE `record_two`
-  MODIFY `record_two_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `schedule`
---
-ALTER TABLE `schedule`
-  MODIFY `schedule_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT for table `sms_logs`
---
-ALTER TABLE `sms_logs`
-  MODIFY `sms_log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `individual_treatment`
---
-ALTER TABLE `individual_treatment`
-  ADD CONSTRAINT `individual_treatment_ibfk_1` FOREIGN KEY (`patient_id`) REFERENCES `patient_enrollement` (`patient_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `patient_enrollement`
---
-ALTER TABLE `patient_enrollement`
-  ADD CONSTRAINT `patient_enrollement_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `record_four`
---
-ALTER TABLE `record_four`
-  ADD CONSTRAINT `record_four_ibfk_1` FOREIGN KEY (`patient_id`) REFERENCES `patient_enrollement` (`patient_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `record_one`
---
-ALTER TABLE `record_one`
-  ADD CONSTRAINT `record_one_ibfk_1` FOREIGN KEY (`patient_id`) REFERENCES `patient_enrollement` (`patient_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `record_two`
---
-ALTER TABLE `record_two`
-  ADD CONSTRAINT `record_two_ibfk_1` FOREIGN KEY (`patient_id`) REFERENCES `patient_enrollement` (`patient_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `schedule`
---
-ALTER TABLE `schedule`
-  ADD CONSTRAINT `schedule_ibfk_1` FOREIGN KEY (`patient_id`) REFERENCES `patient_enrollement` (`patient_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `sms_logs`
---
-ALTER TABLE `sms_logs`
-  ADD CONSTRAINT `sms_logs_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`users_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
